@@ -1,0 +1,31 @@
+qtdAlunos = int(input('Digite a quantidade de alunos: '))
+notasAlunos = [0] * qtdAlunos
+i = 0
+totalNotas = 0
+
+while i < qtdAlunos:
+  notasAlunos[i] = float(input('Digite a nota do aluno: '))
+  totalNotas = totalNotas + notasAlunos[i]
+  i += 1
+
+media = totalNotas / qtdAlunos
+
+i = 0
+acimaMedia = 0
+abaixoMedia = 0
+
+while i < qtdAlunos:
+  if notasAlunos[i] > media:
+    acimaMedia = acimaMedia + 1
+
+  if notasAlunos[i] < media:
+    abaixoMedia = abaixoMedia + 1
+
+  i += 1
+
+percentualAcimaMedia = (acimaMedia / qtdAlunos) * 100
+percentualAbaixoMedia = (abaixoMedia / qtdAlunos) * 100
+
+print('A média é: ', media)
+print('O percentual de alunos acima da média é: ', percentualAcimaMedia)
+print('O percentual de alunos abaixo da média é: ', percentualAbaixoMedia)
