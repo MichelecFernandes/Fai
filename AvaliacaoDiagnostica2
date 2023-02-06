@@ -1,0 +1,8 @@
+numero = float(input('Digite um número para ser fatoriado: '))
+fatorial = 1
+
+while numero > 1:
+  fatorial = fatorial * numero
+  numero = numero - 1
+
+print('O resultado fatorial é: ', fatorial)
