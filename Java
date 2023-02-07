@@ -1,0 +1,31 @@
+public class aula07022023 {
+    /*Devo sempre começar com 'main' e dar 'enter' */
+    public static void main(String[] args) {
+        /*para pode printar as coisas na tela */
+        System.out.println("Hello word");
+
+        /*Tipos Inteiros de Variaveis*/
+        /*primeiro tipo de variavel no Java, ocupa 1 byte na memoria*/
+        byte numero1;
+        /*segundo tipo de variavel no Java, ocupa 2 byte na memoria*/
+        short numero2;
+        /*terceiro tipo de variavel no Java, ocupa 4 byte na memoria*/
+        int numero3;
+        /*quarto tipo de variavel no Java, ocupa 8 byte na memoria*/
+        long numero4;
+
+        numero1 = 1;
+        numero2 = 2;
+        numero3 = 3;
+        numero4 = 4;
+
+        int soma = numero1 + numero2 + numero3 + (int)numero4;
+
+        /*para pode printar as coisas na tela */
+        System.out.println("Soma: " + soma);
+
+        /* o print substitui o '%d" pela variavel que esta na frente */
+        System.out.printf("Soma = %d", soma);
+
+    }
+}
