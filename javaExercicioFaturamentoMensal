@@ -1,0 +1,24 @@
+public class aula07022023 {
+    /*Devo sempre começar com 'main' e dar 'enter' */
+    public static void main(String[] args) {
+
+        /*para pode printar as coisas na tela */
+        System.out.println("Hello word \n");
+
+        int janeiro;
+        int fevereiro;
+        int marco;
+
+        janeiro = 15000;
+        fevereiro = 23000;
+        marco = 17000;
+
+        int despesaTotal = janeiro + fevereiro + marco;
+        double mediaMensal = despesaTotal / 3;
+
+        /*para pode printar as coisas na tela */
+        System.out.println("A despesa trimestral foi de : R$ " + despesaTotal + "\n");
+        System.out.println("A média mensal foi de : R$ " + mediaMensal + "\n");
+
+    }
+}
