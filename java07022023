@@ -1,8 +1,9 @@
 public class aula07022023 {
     /*Devo sempre começar com 'main' e dar 'enter' */
     public static void main(String[] args) {
+
         /*para pode printar as coisas na tela */
-        System.out.println("Hello word");
+        System.out.println("Hello word \n");
 
         /*Tipos Inteiros de Variaveis*/
         /*primeiro tipo de variavel no Java, ocupa 1 byte na memoria*/
@@ -22,10 +23,51 @@ public class aula07022023 {
         int soma = numero1 + numero2 + numero3 + (int)numero4;
 
         /*para pode printar as coisas na tela */
-        System.out.println("Soma: " + soma);
+        System.out.println("Soma: " + soma + "\n");
 
         /* o print substitui o '%d" pela variavel que esta na frente */
-        System.out.printf("Soma = %d", soma);
+        System.out.printf("Soma = %d " "\n",  soma, );
+
+        /*Tipos Reais de Variaveis*/
+        /*ocupa 4 byte na memoria*/
+        float valorDecimal1;
+        /* ocupa 8 byte na memoria*/
+        double valorDecimal2;
+
+        /* (float)0.5 = 0.5f
+        valorDecimal1 = (float)0.5;
+        valorDecimal1 = 0.5f; */
+
+        valorDecimal1 = (float)0.5;
+        valorDecimal2 = 7.4;
+
+        double soma2 = (valorDecimal1 + valorDecimal2);
+        System.out.println("A soma dos valores decimais é: " + soma2 + "\n");
+
+        /*Tipos Booleanas de Variaveis*/
+        /*tem o valor de verdadeiro ou falso apenas*/
+
+        /*ocupa apenas um bit, 1 ou */
+
+        boolean verificacao;
+        verificacao = true;
+
+        int idade = 15;
+
+        boolean menorIdade;
+        menorIdade = idade < 18;
+
+        System.out.println(menorIdade);
+
+        /*Tipos Caracteres de Variaveis*/
+        /* ocupa 2 bytes bna memoria, caractere eu defino apenas com aspas simples  */
+        char caractere = 'h';
+
+        /* charAt uso para definir o indice que quero acessar*/
+        char caractere2 = "palavra".charAt(2);
+        System.out.println(caractere2);
+
+        String nome = "Teste de Nome";
 
     }
 }
