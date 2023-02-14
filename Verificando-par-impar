@@ -55,3 +55,25 @@ public class MostrasNumeros {
 }
 
 /////
+
+
+
+
+/////Usando FOR 
+
+public class ExerciciosJava {
+    public static void main(String[] args) {
+        int numeroInicial, numeroFinal;
+
+        numeroInicial = 7;
+        numeroFinal = 10;
+
+        for(int i = numeroInicial; i <= numeroFinal; i += 1){
+            System.out.println("Número " + i);
+
+        }
+    }
+}
+
+
+////
