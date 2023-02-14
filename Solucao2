@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Solucao2 {
+    public static void main(String[] args) {
+        double area, perimetro, raio, pi;
+
+        pi = 3.14;
+
+        Scanner ler = new Scanner(System.in);
+        System.out.print("Digite o valor do raio: ");
+        raio = ler.nextDouble();
+
+        perimetro = 2 * pi * raio;
+        area = pi * raio * raio;
+
+        System.out.printf("A área é %.2f cm2 \n", area);
+        System.out.printf("O perímetro é %.2f cm2" , perimetro);
+
+        }
+    }
+
