@@ -19,3 +19,39 @@ public class MostrasNumeros {
         }
     }
 }
+
+
+
+
+////COM INPUT
+
+import java.util.Scanner;
+
+public class MostrasNumeros {
+    public static void main(String[] args) {
+        int numeroInicial, numeroFinal;
+
+
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digite o numero inicial: ");
+        numeroInicial = ler.nextInt();
+
+        System.out.println("Digite o numero final: ");
+        numeroFinal = ler.nextInt();
+
+        int i = numeroInicial;
+
+        while (i <= numeroFinal) {
+            System.out.print("O número " + i);
+            boolean numeroPar = i % 2 == 0;
+            if(numeroPar){
+                System.out.println(" é par!!! \n");
+            }else{
+                System.out.println(" é ímpar!!! \n");
+            }
+            i += 1;
+        }
+    }
+}
+
+/////
