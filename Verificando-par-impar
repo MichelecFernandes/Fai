@@ -1,0 +1,21 @@
+public class MostrasNumeros {
+    public static void main(String[] args) {
+        int numeroInicial, numeroFinal;
+
+        numeroInicial = 0;
+        numeroFinal = 20;
+
+        int i = numeroInicial;
+
+        while (i <= numeroFinal) {
+            System.out.println("O número é: " + i);
+            boolean numeroPar = i % 2 == 0;
+            if(numeroPar){
+                System.out.println("É par!!! \n");
+            }else{
+                System.out.println("É ímpar!!! \n");
+            }
+            i += 1;
+        }
+    }
+}
