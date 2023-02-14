@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Solucao1 {
+    public static void main(String[] args) {
+        double salario1, salario2, salario3, salario4, salario5;
+
+        Scanner ler = new Scanner(System.in);
+        System.out.print("Digite o valor do salário: ");
+        salario1 = ler.nextDouble();
+
+        System.out.print("Digite o valor do salário: ");
+        salario2 = ler.nextDouble();
+
+        System.out.print("Digite o valor do salário: ");
+        salario3 = ler.nextDouble();
+
+        System.out.print("Digite o valor do salário: ");
+        salario4 = ler.nextDouble();
+
+        System.out.print("Digite o valor do salário: ");
+        salario5 = ler.nextDouble();
+
+        double soma = (salario1 + salario2 + salario3 + salario4 + salario5) / 5;
+
+        System.out.printf("A média de salários desta empresa é R$ %.2f", soma);
+
+    }
+}
