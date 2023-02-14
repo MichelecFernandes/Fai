@@ -1,0 +1,18 @@
+public class Solucao3 {
+    public static void main(String[] args) {
+        int i, numeroInicial, numeroFinal;
+
+        numeroInicial = 0;
+        numeroFinal = 100;
+
+        i = numeroInicial;
+
+        while (i <= numeroFinal){
+            boolean numeroPar = i % 2 == 0;
+            if(numeroPar){
+                System.out.println("> " + i);
+            }
+            i += 1;
+        }
+    }
+}
