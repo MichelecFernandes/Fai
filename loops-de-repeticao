@@ -1,0 +1,25 @@
+public class MediasNotas {
+    public static void main(String[] args) {
+        double nota1, nota2, nota3, nota4;
+
+        nota1 = 65.5;
+        nota2 = 52.0;
+        nota3 = 36.5;
+        nota4 = 56.3;
+
+        double mediaNotas = (nota1 + nota2 + nota3 + nota4) / 4;
+
+        System.out.println("A média do aluno: " +  mediaNotas);
+
+        System.out.printf("Média do aluno %.2f \n", mediaNotas);
+
+        if(mediaNotas >= 70){
+            System.out.println("Aluno Aprovado!! :D");
+        } else if (mediaNotas >= 30 && mediaNotas< 70) {
+            System.out.println("Aluno em Exame Final!! :/ ");
+        }else {
+
+            System.out.println("Aluno Reprovado!!! :( ");
+        }
+    }
+}
