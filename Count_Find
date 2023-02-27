@@ -71,6 +71,8 @@ cadeia = "Robertinho da Silva"
 print(cadeia.find("e"))
 print(pos(cadeia,"e"))
 
+lista = cadeia.split()
+print(lista)
 
 
 
