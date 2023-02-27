@@ -1,0 +1,79 @@
+'''
+nome = "Roberto de Souza Porto"
+
+print(nome[9])
+print(nome[-1])
+print(nome[2 * 4])
+###conta quantos carateres tem de acordo com a solicitação###
+print(nome.count("o"))
+
+print(nome.find("e"))
+'''
+
+'''
+def sub(cadeia, pos_ini, comp):
+    tam = len(cadeia)
+    subcadeia = ("")
+    i = pos_ini
+    cont = 1
+
+    while (i < len) and (cont < comp):
+        subcadeia = subcadeia + cadeia[i]
+        i = i +1
+
+    return subcadeia
+
+def sub(cadeia, pos_ini, comp):
+    tam = len(cadeia)
+    i = pos_ini
+    cont = 1
+    while (i < len) and (cont < comp):
+        cadeia[i] = str("Digite o valor: ")
+        cont = cont + 1
+'''
+
+def pos(cadeia, subcadeia):
+    achou = 0
+    tamc = len(cadeia)
+    tams = len(subcadeia)
+
+    if tamc >= tams:
+        inicio = 0
+        while (tamc >= tams) and (achou == 0):
+            i = 0
+            j = inicio
+            if subcadeia[i] == cadeia[j]:
+                local = j
+                i = i +1
+                j = j + 1
+                while (i < tams) and (subcadeia[i] == cadeia[j]):
+                    i = i + 1
+                    j = j + 1
+                if i < tams:
+                    inicio = inicio + 1
+                    tamc = tamc - 1
+
+                else:
+                    achou = 1
+            else:
+                inicio = inicio + 1
+                tamc = tamc - 1
+
+    else:
+        print("A subcadeia tem tamanho Maior que a cadeia!")
+    if achou == 0:
+        local = 1
+
+    return local
+
+'''pos tem a mesma função de Find '''
+cadeia = "Robertinho da Silva"
+print(cadeia.find("e"))
+print(pos(cadeia,"e"))
+
+
+
+
+
+
+
