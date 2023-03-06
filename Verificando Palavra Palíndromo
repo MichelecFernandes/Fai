@@ -1,0 +1,27 @@
+palavra = str(input("Digite a palavra a ser consultada como pálindromo: "))
+
+tamanhoPalavra = len(palavra)
+palavraContraria = [0] * len(palavra)
+
+i = 0
+j = -1
+while i < tamanhoPalavra:
+    palavraContraria[i] = palavra[j]
+    i = i + 1
+    j = j - 1
+
+
+i = 0
+palindromo = "teste"
+while i < tamanhoPalavra:
+    if palavraContraria[i] == palavra[i]:
+        i = i + 1
+        palindromo = "verdade"
+    else:
+        print("A palavra não é palíndromo")
+        palindromo = "false"
+        i = tamanhoPalavra
+
+if palindromo == "verdade":
+    print("A palavra é palíndromo!!")
+
