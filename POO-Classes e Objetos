@@ -1,0 +1,37 @@
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+
+public class TestePessoa {
+    public static void main(String[] args) {
+        //A partir do new eu instancio um objeto, ela é um objeto
+        // do tipo pessoa (um ojeto que tem as caracteristicas do tipo pessoa)
+        //construtor permitir geral o objeto a partir da classe, preciso para
+        // criar um objeto, uso o metodo construtor para obrigar o valor daquele objeto
+
+        Pessoa pessoaJose = new Pessoa("José", 47, 78.5, 1.70, 'M');
+
+        //pessoaJose.nome = "José";
+        //pessoaJose.idade = 47;
+        //pessoaJose.peso = 78.5;
+        //pessoaJose.altura = 1.70;
+        //pessoaJose.sexo = 'M';
+
+
+        //Pessoa pessoaMaria = new Pessoa();
+        //pessoaMaria.nome = "Maria";
+        //pessoaMaria.idade = 30;
+        //pessoaMaria.peso = 65;
+        //pessoaMaria.altura = 1.60;
+        //pessoaMaria.sexo = 'F';
+
+
+        //Pessoa pessoaJoao = new Pessoa();
+        //pessoaJoao.nome = "João";
+        //pessoaJoao.idade = 25;
+        //pessoaJoao.peso = 70;
+        //pessoaJoao.altura = 1.78;
+        //pessoaJoao.sexo = 'M';
+
+
+        System.out.println(pessoaJose.nome);
+    }
+}
