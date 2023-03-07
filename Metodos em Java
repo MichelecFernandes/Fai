@@ -1,0 +1,98 @@
+
+public class Pessoa {
+    //Atributos
+    private String nome;
+    private int idade;
+    private double peso;
+    private double altura;
+    private char sexo;
+
+    // se o metodo nao tiver ação, ele é atributo
+    //pessoa é o metodo do tipo construtor, pois e a classe que vou usar para criar um objeto
+
+    Pessoa(String nome, int idade, double peso, double altura, char sexo){
+        this.nome = nome;
+        this.idade = idade;
+        this.peso = peso;
+        this.altura = altura;
+        this.sexo = sexo;
+    }
+
+    //Metodo Acessor
+    public String getNome() {
+        return this.nome;
+    }
+    public double getAltura(){
+        return this.altura;
+    }
+
+    //Metodo Mutante é para modificar, mudar os dados internos de um objeto
+    public void setNome(String nomeAlterado){
+        this.nome = nomeAlterado;
+    }
+
+    public double calcularICM(){
+        return (this.peso / (this.altura * this.altura));
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+
+    public char getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(char sexo) {
+        this.sexo = sexo;
+    }
+}
+
+
+
+///public class TestePessoa {
+    public static void main(String[] args) {
+        //A partir do new eu instancio um objeto, ela é um objeto
+        // do tipo pessoa (um ojeto que tem as caracteristicas do tipo pessoa)
+        //construtor permitir geral o objeto a partir da classe, preciso para
+        // criar um objeto, uso o metodo construtor para obrigar o valor daquele objeto
+
+
+        //todos os atributos de uma classe são privados, porque eu não
+        //posso permitir nenhum acesso ao atributo da classe sem ser por um metodo
+
+        //metodo construtor
+        Pessoa pessoaJose = new Pessoa("José", 47, 78.5, 1.70, 'M');
+        Pessoa pessoaMaria = new Pessoa("Maria", 30, 65, 1.62, 'F');
+        Pessoa pessoaJoao = new Pessoa("João", 25, 70, 1.78, 'M');
+
+        //metodo acessor, usando GET
+        System.out.println(pessoaJose.getNome());
+
+        pessoaJose.setNome("José Lopes");
+
+        System.out.println(pessoaJose.getNome());
+        System.out.println("O índice de massa corporal de José é: " + pessoaJose.calcularICM());
+        System.out.println("O índice de massa corporal de Maria é: " + pessoaMaria.calcularICM());
+
+        System.out.println("A altura de José é: " + pessoaJose.getAltura());
+        System.out.println("A altura de Maria é: " + pessoaMaria.getAltura());
+    }
+}
+
