@@ -1,3 +1,28 @@
+////ARQUIVO JAVA PESSOA//////
+
+public class Pessoa {
+    //Atributos
+    String nome;
+    int idade;
+    double peso;
+    double altura;
+    char sexo;
+
+    // se o metodo nao tiver ação, ele é atributo
+    //pessoa é o metodo do tipo construtor, pois e a classe que vou usar para criar um objeto
+
+    Pessoa(String nome, int idade, double peso, double altura, char sexo){
+        this.nome = nome;
+        this.idade = idade;
+        this.peso = peso;
+        this.altura = altura;
+        this.sexo = sexo;
+    }
+}
+
+
+///ARQUIVO JAVA TstesPessoa////
+
 import javax.swing.plaf.synth.SynthOptionPaneUI;
 
 public class TestePessoa {
