@@ -1,0 +1,11 @@
+alunos = open("alunos.txt", "a")
+nome = ("\n" + "Alan")
+nome1 = ("\n" + "Claudia")
+alunos.write(nome + "\n" + nome1)
+alunos.close()
+
+
+alunos = open("alunos.txt", "r")
+string = alunos.read()
+
+print(string)
