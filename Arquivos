@@ -1,7 +1,10 @@
-alunos = open("alunos.txt", "a")
-nome = ("\n" + "Alan")
-nome1 = ("\n" + "Claudia")
-alunos.write(nome + "\n" + nome1)
+alunos = open("alunos.txt", "w")
+boasVindas = ("Olá, Seja Bem vindo")
+usandoArquivos = ("\n" + "Esse é um teste usando arquivos!")
+aula = ("\n" + "A aula é referente ao dia 07/03/2023")
+entender = ("\n" + "Você está começando a entender!")
+conseguir = ("\n" +"Você vai conseguir!!!! :)")
+alunos.write(boasVindas + usandoArquivos + aula + entender + conseguir)
 alunos.close()
 
 
